@@ -1,0 +1,159 @@
+/* This stylesheet is used only for general styling. seperate styling sheets and embeded styling is used to make changes unique to individual pages*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*================
+    Variables
+================*/
+
+:root {
+    /* colours */
+    --dark-gray: #3c3c3c;
+    --gray: #606060;
+    --ash: #9c9c9c;
+    --black: #030303;
+    --white: #cfcfcf;
+    --dark-blue: #000613;
+    --navy: #033447;
+    --light-blue: #00b4b5;
+    --peach: #d9a494;
+    --brown: #7b2e24;
+
+    /* fonts */
+    --font-heading: "Montserrat";
+    --font-content: "DM Serif Text";
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
+header {
+    display: flex;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li{
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 500;
+    list-style: none;
+    display: inline;
+}
+
+.navbar li a {
+    color: var(--white);
+    margin: 0 1.5ch;
+    text-decoration: none;
+}
+
+.navbar > button {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    padding: 0.5rem 1rem;
+    margin: 0 1.5ch;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#headerLogo {
+    width: 15%;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+body {
+    font-family: var(--font-content), serif;
+}
+
+#footerLogo {
+    width: 15%;
+    margin: 10px;
+
+}
+
+footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.footercontent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    color: var(--white);
+    font-family: var(--font-content), serif;
+}
+
+footer ul li{
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+footer a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+address {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 0.7rem;
+    color: var(--ash);
+    font-style: normal;
+}
+
+/*=====================
+    utility classes
+=====================*/
+
+.heading-font {
+    font-family: var(--font-heading), sans-serif;
+    font-weight: 700;
+    margin-bottom: 1ch;
+}
+
+.content-font {
+    font-family: var(--font-content), serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.mainBtn {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
