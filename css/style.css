@@ -2,7 +2,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*================
     Variables
@@ -14,7 +14,6 @@
     --gray: #606060;
     --ash: #9c9c9c;
     --black: #030303;
-    --white: #cfcfcf;
     --dark-blue: #000613;
     --navy: #033447;
     --light-blue: #00b4b5;
@@ -22,8 +21,8 @@
     --brown: #7b2e24;
 
     /* fonts */
-    --font-heading: "Montserrat";
-    --font-content: "DM Serif Text";
+    --font-sans-serif: "Montserrat";
+    --font-serif: "Noto Serif";
 }
 
 
@@ -38,10 +37,14 @@ html {
     scroll-padding: 10rem;
 }
 
+/*==========================
+        Header Section
+==========================*/
+
 header {
     display: flex;
     background-color: var(--dark-blue);
-    color: var(--white);
+    color: white;
     justify-content: space-between;
     align-items: center;
 }
@@ -52,7 +55,7 @@ header {
 }
 
 .navbar li{
-    font-family: var(--font-heading);
+    font-family: var(--font-sans-serif);
     font-size: 1.2rem;
     font-weight: 500;
     list-style: none;
@@ -60,12 +63,123 @@ header {
 }
 
 .navbar li a {
-    color: var(--white);
+    color: white;
     margin: 0 1.5ch;
+    text-decoration: none;
+
+    transition: 300ms ease;
+}
+
+.navbar li a:hover {
+    color: var(--light-blue);
+}
+
+.navbar li a:active {
+    transition: 0ms;
+    color: var(--navy);
+}
+
+#headerLogo {
+    width: 15%;
+    margin: 10px;
+}
+
+
+/*=================================
+            Body Section
+=================================*/
+
+body {
+    background-color: var(--navy);
+    color: white;
+}
+
+p {
+    font-family: var(--font-serif), serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans-serif);
+    font-weight: 700;
+}
+
+a:link {
+    color: var(--light-blue);
+    transition: 300ms ease;
     text-decoration: none;
 }
 
-.navbar > button {
+a:hover {
+    color: var(--peach);
+}
+
+a:active {
+    color: var(--brown);
+}
+
+/*==================================
+            Footer Section
+==================================*/
+
+footer {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+#footerLogo {
+    width: 15%;
+    margin: 10px;
+}
+
+.footercontent {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    font-family: var(--font-serif), serif;
+    font-weight: 300;
+}
+
+footer ul li{
+    margin: 5px 0;
+}
+
+footer ul li a:link{
+    color: white;
+    text-decoration: none;
+
+    transition: 300ms ease;
+}
+
+footer ul li a:hover {
+    color: var(--light-blue);
+}
+
+footer ul li a:active {
+    transition: 0s;
+    color: var(--navy);
+}
+
+#copyright {
+    font-family: var(--font-sans-serif), sans-serif;
+    font-weight: 300;
+    font-size: 0.7rem;
+    color: var(--ash);
+    font-style: normal;
+    padding: 5px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*=====================
+    utility classes
+=====================*/
+
+.mainButton {
     background-color: var(--light-blue);
     color: var(--dark-blue);
     padding: 0.5rem 1rem;
@@ -76,84 +190,36 @@ header {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+
+    transition: 300ms ease;
 }
 
-#headerLogo {
-    width: 15%;
-    margin: 10px;
-    border-radius: 50%;
+.mainButton:hover{
+    background-color: var(--peach);
+    color: white;
+    transform: scale(1.1);
 }
 
-body {
-    font-family: var(--font-content), serif;
+.mainButton:active {
+    transition: 0s;
+    color: white;
+    background-color: var(--brown);
 }
 
-#footerLogo {
-    width: 15%;
-    margin: 10px;
 
+
+/*==================================
+        Animations Section
+==================================*/
+
+.slow-spin {
+    color: var(--navy);
+    animation: spin linear 20s infinite;
 }
 
-footer {
-    background-color: var(--dark-blue);
-    color: var(--white);
-}
-
-.footercontent {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-footer ul {
-    list-style: none;
-    color: var(--white);
-    font-family: var(--font-content), serif;
-}
-
-footer ul li{
-    text-decoration: none;
-    margin: 5px 0;
-}
-
-footer a{
-    color: var(--white);
-    text-decoration: none;
-}
-
-address {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-size: 0.7rem;
-    color: var(--ash);
-    font-style: normal;
-}
-
-/*=====================
-    utility classes
-=====================*/
-
-.heading-font {
-    font-family: var(--font-heading), sans-serif;
-    font-weight: 700;
-    margin-bottom: 1ch;
-}
-
-.content-font {
-    font-family: var(--font-content), serif;
-    font-weight: 300;
-    font-size: 1rem;
-}
-
-.mainBtn {
-    background-color: var(--light-blue);
-    color: var(--dark-blue);
-    padding: 0.5rem 1rem;
-    margin: 1rem;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+@keyframes spin {
+    from{}
+    to {
+        transform: rotate(360deg);
+    }
 }
