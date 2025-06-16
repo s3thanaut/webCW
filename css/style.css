@@ -80,7 +80,7 @@ header {
 }
 
 #headerLogo {
-    width: 15%;
+    max-width: max(70px, 15%);
     margin: 10px;
 }
 
@@ -97,11 +97,13 @@ body {
 p {
     font-family: var(--font-serif), serif;
     font-weight: 300;
+    padding: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-sans-serif);
     font-weight: 700;
+    padding: 10px;
 }
 
 a:link {
@@ -128,7 +130,7 @@ footer {
 }
 
 #footerLogo {
-    width: 15%;
+    max-width: max(100px, 15%);
     margin: 10px;
 }
 
@@ -142,6 +144,7 @@ footer ul {
     list-style: none;
     font-family: var(--font-serif), serif;
     font-weight: 300;
+    padding: 10px;
 }
 
 footer ul li{
