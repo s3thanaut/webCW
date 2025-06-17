@@ -1,0 +1,228 @@
+/* This stylesheet is used only for general styling. seperate styling sheets and embeded styling is used to make changes unique to individual pages*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*================
+    Variables
+================*/
+
+:root {
+    /* colours */
+    --dark-gray: #3c3c3c;
+    --gray: #606060;
+    --ash: #9c9c9c;
+    --black: #030303;
+    --dark-blue: #000613;
+    --navy: #033447;
+    --light-blue: #00b4b5;
+    --peach: #d9a494;
+    --brown: #7b2e24;
+
+    /* fonts */
+    --font-sans-serif: "Montserrat";
+    --font-serif: "Noto Serif";
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
+/*==========================
+        Header Section
+==========================*/
+
+header {
+    display: flex;
+    background-color: var(--dark-blue);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li{
+    font-family: var(--font-sans-serif);
+    font-size: 1.2rem;
+    font-weight: 500;
+    list-style: none;
+    display: inline;
+}
+
+.navbar li a {
+    color: white;
+    margin: 0 1.5ch;
+    text-decoration: none;
+
+    transition: 300ms ease;
+}
+
+.navbar li a:hover {
+    color: var(--light-blue);
+}
+
+.navbar li a:active {
+    transition: 0ms;
+    color: var(--navy);
+}
+
+#headerLogo {
+    max-width: max(70px, 15%);
+    margin: 10px;
+}
+
+
+/*=================================
+            Body Section
+=================================*/
+
+body {
+    background-color: var(--navy);
+    color: white;
+}
+
+p {
+    font-family: var(--font-serif), serif;
+    font-weight: 300;
+    padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans-serif);
+    font-weight: 700;
+    padding: 10px;
+}
+
+a:link {
+    color: var(--light-blue);
+    transition: 300ms ease;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--peach);
+}
+
+a:active {
+    color: var(--brown);
+}
+
+/*==================================
+            Footer Section
+==================================*/
+
+footer {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+#footerLogo {
+    max-width: max(100px, 15%);
+    margin: 10px;
+}
+
+.footercontent {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    font-family: var(--font-serif), serif;
+    font-weight: 300;
+    padding: 10px;
+}
+
+footer ul li{
+    margin: 5px 0;
+}
+
+footer ul li a:link{
+    color: white;
+    text-decoration: none;
+
+    transition: 300ms ease;
+}
+
+footer ul li a:hover {
+    color: var(--light-blue);
+}
+
+footer ul li a:active {
+    transition: 0s;
+    color: var(--navy);
+}
+
+#copyright {
+    font-family: var(--font-sans-serif), sans-serif;
+    font-weight: 300;
+    font-size: 0.7rem;
+    color: var(--ash);
+    font-style: normal;
+    padding: 5px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*=====================
+    utility classes
+=====================*/
+
+.mainButton {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    padding: 0.5rem 1rem;
+    margin: 0 1.5ch;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: 300ms ease;
+}
+
+.mainButton:hover{
+    background-color: var(--peach);
+    color: white;
+    transform: scale(1.1);
+}
+
+.mainButton:active {
+    transition: 0s;
+    color: white;
+    background-color: var(--brown);
+}
+
+
+
+/*==================================
+        Animations Section
+==================================*/
+
+.slow-spin {
+    color: var(--navy);
+    animation: spin linear 20s infinite;
+}
+
+@keyframes spin {
+    from{}
+    to {
+        transform: rotate(360deg);
+    }
+}
