@@ -15,10 +15,12 @@
     --ash: #9c9c9c;
     --black: #030303;
     --dark-blue: #000613;
-    --navy: #033447;
+    --navy: #033b52;
     --light-blue: #00b4b5;
     --peach: #d9a494;
     --brown: #7b2e24;
+    --lime: #36f640;
+    --green: #08830a;
 
     /* fonts */
     --font-sans-serif: "Montserrat";
@@ -43,28 +45,30 @@ html {
 
 header {
     display: flex;
+    justify-content: flex-end;
     background-color: var(--dark-blue);
     color: white;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .navbar {
+    right: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-left: auto;
 }
 
 .navbar li{
-    font-family: var(--font-sans-serif);
-    font-size: 1.2rem;
-    font-weight: 500;
     list-style: none;
-    display: inline;
+    display: inline-block;
 }
 
 .navbar li a {
+    font-family: var(--font-sans-serif);
+    font-size: 1.2rem;
+    font-weight: 500;
     color: white;
-    margin: 0 1.5ch;
+    margin: 0 1ch;
     text-decoration: none;
 
     transition: 300ms ease;
@@ -80,10 +84,22 @@ header {
 }
 
 #headerLogo {
-    max-width: max(70px, 15%);
+    max-width: 70px;
     margin: 10px;
 }
 
+#check {
+    display: none;
+}
+
+#burger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    translate: 0 -50%;
+}
 
 /*=================================
             Body Section
@@ -182,34 +198,86 @@ footer ul li a:active {
     utility classes
 =====================*/
 
-.mainButton {
-    background-color: var(--light-blue);
-    color: var(--dark-blue);
+.blueButton {
+    background-color: var(--dark-blue);
+
+    border: solid 2px var(--light-blue);
+    border-radius: 50px;
+    color: var(--light-blue);
     padding: 0.5rem 1rem;
     margin: 0 1.5ch;
     font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
-    border: none;
-    border-radius: 10px;
     cursor: pointer;
 
     transition: 300ms ease;
 }
 
-.mainButton:hover{
-    background-color: var(--peach);
-    color: white;
+.blueButton:hover{
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
     transform: scale(1.1);
 }
 
-.mainButton:active {
+.blueButton:active {
     transition: 0s;
-    color: white;
-    background-color: var(--brown);
+    opacity: 0.4;
 }
 
+.greenButton {
+    background-color: var(--dark-blue);
 
+    border: solid 2px var(--lime);
+    border-radius: 50px;
+    color: var(--lime);
+    padding: 0.5rem 1rem;
+    margin: 0 1.5ch;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: 300ms ease;
+}
+
+.greenButton:hover{
+    background-color: var(--lime);
+    color: var(--dark-blue);
+    transform: scale(1.1);
+}
+
+.greenButton:active{
+    transition: 0s;
+    opacity: 0.4;
+}
+
+.peachButton {
+    background-color: var(--dark-blue);
+
+    border: solid 2px var(--peach);
+    border-radius: 50px;
+    color: var(--peach);
+    padding: 0.5rem 1rem;
+    margin: 0 1.5ch;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: 300ms ease;
+}
+
+.peachButton:hover{
+    background-color: var(--peach);
+    color: var(--dark-blue);
+    transform: scale(1.1);
+}
+
+.peachButton:active{
+    transition: 0s;
+    opacity: 0.4;
+}
 
 /*==================================
         Animations Section
@@ -224,5 +292,17 @@ footer ul li a:active {
     from{}
     to {
         transform: rotate(360deg);
+    }
+}
+
+
+
+/*=================================
+        Media Query Section
+=================================*/
+
+@media (max-width: 850px) {
+    .navbar li a, .navbar button {
+        font-size: 0.8rem;
     }
 }
