@@ -110,8 +110,8 @@ body {
     color: white;
 }
 
-p, label, input {
-    font-family: var(--font-serif), serif;
+p, label, input , textarea{
+    font-family: var(--font-sans-serif), serif;
     font-weight: 300;
     padding: 10px;
 }
