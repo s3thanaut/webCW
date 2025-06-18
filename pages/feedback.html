@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Feedback</title>
-    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="..\css\style.css">
     
 </head>
 <body>
+    
     <div class="container">
         <h2>Leave a review</h2>
-        <form action="#">
+        <form name="myForm" action="#" onsubmit="return validateForm()"  method="post" >
 
             <div class="name-area">
                 <label> Name:
-                <input type="text" id="name" name="name-field">
+                <input type="text" id="name" name="name-field" required>
                 </label>
                 <label> Email:
-                <input type="text" id="name" name="email-field">
+                <input type="email" id="email" name="email-field" required>
                 </label>
             </div>
            
@@ -39,8 +40,36 @@
     <label for="star1">&#9733;</label>
 </div>
 
-            <textarea name="" id="#" placeholder="write your feedback...." required></textarea>
+            <textarea name="" id="feedback" placeholder="write your feedback...." required></textarea>
             <button type="submit">Submit review</button>
         </form>
     </div>
+
+    <script>
+function validateForm() {
+    const name = document.forms["myForm"]["name-field"].value.trim();
+    const email = document.forms["myForm"]["email-field"].value.trim();
+    const feedback = document.forms["myForm"]["feedback"].value.trim();
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (name === "") {
+        alert("Name must be filled out.");
+        return false;
+    }
+
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+
+    if (feedback === "") {
+        alert("Please write your feedback.");
+        return false;
+    }
+
+    return true;
+}
+</script>
+
 </body>
