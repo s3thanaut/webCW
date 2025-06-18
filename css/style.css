@@ -14,13 +14,15 @@
     --gray: #606060;
     --ash: #9c9c9c;
     --black: #030303;
-    --dark-blue: #000e2c;
+    --dark-blue: #051b4d;
     --navy: #022938;
-    --light-blue: #00b4b5;
+    --light-blue: #007bff;
     --peach: #d9a494;
     --brown: #7b2e24;
     --lime: #36f640;
     --green: #08830a;
+
+    --blue-gradient: linear-gradient(30deg, #000613, #051b4d);
 
     /* fonts */
     --font-sans-serif: "Montserrat";
@@ -46,7 +48,8 @@ html {
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
+    background-image: var(--blue-gradient);
     color: white;
 }
 
@@ -141,7 +144,8 @@ a:active {
 ==================================*/
 
 footer {
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
+    background-image: var(--blue-gradient);
     color: white;
 }
 

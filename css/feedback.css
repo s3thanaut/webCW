@@ -16,9 +16,9 @@
     --gray: #606060;
     --ash: #9c9c9c;
     --black: #030303;
-    --dark-blue: #000613;
+    --dark-blue: #051b4d;
     --navy: #033b52;
-    --light-blue: #00b4b5;
+    --light-blue: #007bff;
     --peach: #d9a494;
     --brown: #7b2e24;
     --lime: #36f640;
@@ -28,7 +28,8 @@
 
 
 .container {
-    background-color: var(--dark-blue) ;
+    /* background-color: var(--dark-blue); */
+    background-image: linear-gradient(30deg, #000613, #051b4d);
     padding: 2rem 2.5rem;
     margin: 50px auto 50px auto;
     border-radius: 12px;
