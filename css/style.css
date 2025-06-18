@@ -14,8 +14,8 @@
     --gray: #606060;
     --ash: #9c9c9c;
     --black: #030303;
-    --dark-blue: #000613;
-    --navy: #033b52;
+    --dark-blue: #000e2c;
+    --navy: #022938;
     --light-blue: #00b4b5;
     --peach: #d9a494;
     --brown: #7b2e24;
@@ -106,11 +106,11 @@ header {
 =================================*/
 
 body {
-    background-color: var(--navy);
+    background-color: var(--ash);
     color: white;
 }
 
-p {
+p, label, input {
     font-family: var(--font-serif), serif;
     font-weight: 300;
     padding: 10px;
@@ -136,6 +136,9 @@ a:active {
     color: var(--brown);
 }
 
+input {
+
+}
 /*==================================
             Footer Section
 ==================================*/
