@@ -220,7 +220,7 @@ footer ul li a:active {
 
 .blueButton:hover{
     background-color: var(--light-blue);
-    color: var(--dark-blue);
+    color: white;
     transform: scale(1.1);
 }
 
