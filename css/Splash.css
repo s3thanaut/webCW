@@ -1,5 +1,8 @@
 
 @import "./style.css";
+body {
+  padding: 0;
+}
 
 .splash-screen {
   height: 100vh;  
