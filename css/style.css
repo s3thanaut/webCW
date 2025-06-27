@@ -46,6 +46,9 @@ html {
 ==========================*/
 
 header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: flex-end;
     /* background-color: var(--dark-blue); */
@@ -109,6 +112,7 @@ header {
 =================================*/
 
 body {
+    padding-top: 100px;
     background-color: var(--ash);
     color: white;
 }
