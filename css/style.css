@@ -247,7 +247,7 @@ footer ul li a:active {
 
 .greenButton:hover{
     background-color: var(--lime);
-    color: var(--dark-blue);
+    color: white;
     transform: scale(1.1);
 }
 
@@ -274,7 +274,7 @@ footer ul li a:active {
 
 .peachButton:hover{
     background-color: var(--peach);
-    color: var(--dark-blue);
+    color: white;
     transform: scale(1.1);
 }
 
