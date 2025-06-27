@@ -293,7 +293,7 @@ footer ul li a:active {
 
 .slow-spin {
     color: var(--navy);
-    animation: spin linear 20s infinite;
+    animation: spin linear 17s infinite;
 }
 
 @keyframes spin {
