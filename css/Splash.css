@@ -1,11 +1,9 @@
-*{
-  margin: 0%;
-}
 
+@import "./style.css";
 
 .splash-screen {
   height: 100vh;  
-  background-image:linear-gradient(30deg, #000613, #051b4d);
+  background-image:var(--blue-gradient);
   display: flex;
   justify-content: center;
   align-items: center;
