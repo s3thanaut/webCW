@@ -34,7 +34,7 @@ header{
 
 .card-container {
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -45,8 +45,7 @@ header{
     box-shadow: 0 4px 24px rgba(0,0,0,0.2);
     border-radius: 16px;
     padding: 2rem 1.5rem;
-    min-width: 260px;
-    max-width: 340px;
+    min-width: 340px;
     color: #051b4d;
     z-index: 2;
     text-align: center;
