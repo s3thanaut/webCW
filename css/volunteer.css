@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: black;
   
 }
 header{
@@ -20,7 +21,7 @@ header{
 
 
 .volcontent {
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(6px);
     padding: 2rem 2.5rem;
     max-width: 100%;
     height: 640px;
@@ -32,7 +33,7 @@ header{
     position: relative;
     width: 100%;
     height: 100%;
-
+}
 
 .bg-video {
     position: absolute;
@@ -41,7 +42,14 @@ header{
     height: 100%;
     object-fit: cover;
     z-index: 0;
+    animation: fadeInOut 5s ease;
+
 }
 
 
-
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+ 
+}
