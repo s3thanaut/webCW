@@ -113,8 +113,8 @@ header {
 
 body {
     padding-top: 100px;
-    background-color: var(--ash);
-    color: white;
+    background-color: var(--black);
+    color: white;;
 }
 
 p, label, input , textarea{
