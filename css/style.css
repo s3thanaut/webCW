@@ -14,9 +14,11 @@
     --gray: #606060;
     --ash: #9c9c9c;
     --black: #030303;
-    --dark-blue: #051b4d;
+    --dark-blue: #000716;
+    --darker-blue: #00030a;
     --navy: #022938;
     --light-blue: #007bff;
+    --red: #da0606;
     --peach: #d9a494;
     --brown: #7b2e24;
     --lime: #36f640;
@@ -113,8 +115,9 @@ header {
 
 body {
     padding-top: 100px;
-    background-color: var(--black);
-    color: white;;
+    background-color: var(--dark-blue);
+    color: white;
+    font-family: var(--font-sans-serif)
 }
 
 p, label, input , textarea{
@@ -136,7 +139,7 @@ a:link {
 }
 
 a:hover {
-    color: var(--peach);
+    color: white;
 }
 
 a:active {
