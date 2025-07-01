@@ -115,6 +115,7 @@ body {
     padding-top: 100px;
     background-color: var(--ash);
     color: white;
+    font-family: var(--font-sans-serif);
 }
 
 p, label, input , textarea{
