@@ -1,1 +1,30 @@
+.main-content {
+  min-height: 100vh;
+  background: #0b0124;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.main-content section {
+  max-width: 1000px;
+  margin: 0 auto 2rem auto;
+  background: rgba(30, 40, 60, 0.85);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.4);
+  padding: 2rem 2.5rem;
+}
+
+.intro-section {
+  text-align: center;
+}
+
+.main-content h2, .main-content h3 {
+  color: #4ec3fa;
+  margin-bottom: 1rem;
+}
+
+
+.main-content p {
+  font-size: 1.1rem
+}
 @import "style.css";
