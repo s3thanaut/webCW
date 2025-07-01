@@ -13,7 +13,7 @@
 }
 
 .content-table tbody tr {
-    border-bottom: solid 1px gray;
+    border-bottom: solid 1px var(--dark-gray);
 }
 
 .content-table tbody tr:last-of-type {
@@ -33,6 +33,12 @@
     font-weight: 500;
 }
 
+.cr::after {
+    content: '$';
+    font-weight: 300;
+    color: white;
+}
+
 .en {
     color: var(--red);
     font-weight: 500;
@@ -41,4 +47,11 @@
 .vu {
     color: #ffcc00;
     font-weight: 500;
+}
+
+#table-logo {
+    padding: 5px;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+    max-width: 50px;
 }
