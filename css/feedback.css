@@ -153,6 +153,7 @@ select{
 textarea{
     flex:1;
     margin-bottom: 0;
+    width: 500px;
 }
 
 fieldset {
