@@ -29,7 +29,6 @@
     --font-sans-serif: "Poppins";
     --font-serif: "Noto Serif";
 
-    /* effects */
 }
 
 
@@ -174,7 +173,7 @@ footer {
 }
 
 #footerLogo {
-    max-width: max(80px, 15%);
+    max-width: max(50px, 10%);
     margin: 10px;
 }
 

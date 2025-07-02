@@ -34,8 +34,8 @@
 }
 
 .cr::before {
-    content: '$';
-    font-weight: 300;
+    font-family: "Font Awesome 6 Free";
+    content: "\f00a";
     color: white;
 }
 
@@ -54,4 +54,14 @@
     background-color: var(--dark-blue);
     border-radius: 50%;
     max-width: 50px;
+}
+
+#table-logo:hover {
+    animation: spin 1s ease-in-out;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(720deg);
+    }
 }
