@@ -1,3 +1,67 @@
+/* Side Navigation Styles */
+.side-nav {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 180px;
+  background: rgba(20, 30, 50, 0.98);
+  border-radius: 0 18px 18px 0;
+  box-shadow: 2px 0 16px 0 rgba(0,0,0,0.2);
+  z-index: 1000;
+  padding: 1.5rem 0.5rem 1.5rem 1rem;
+  height: auto;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.side-nav li {
+  margin-bottom: 1.2rem;
+}
+.side-nav a {
+  color: #4ec3fa;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: color 0.2s;
+  padding: 0.3rem 0.5rem;
+  border-radius: 8px;
+  display: block;
+}
+.side-nav a:hover, .side-nav a:focus {
+  background: #223a5e;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .side-nav {
+    position: static;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5rem 0;
+    min-height: unset;
+    background: #18243a;
+    margin-bottom: 1rem;
+  }
+  .side-nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .side-nav li {
+    margin-bottom: 0;
+  }
+}
 .main-content {
   min-height: 100vh;
   background: #0b0124;
@@ -25,6 +89,7 @@
 
 .contentimg {
   margin-top: 3%;
+  
   width: 100%;
   max-width: 800px;
   border-radius: 30px;
