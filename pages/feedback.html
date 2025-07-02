@@ -32,8 +32,8 @@
 <div class="container">
         <h2>Leave a review</h2>
         <form name="myForm" action="#"   method="post" >
-            <fieldset>
-                <legend>--ALlahu akbarullah--</legend>
+            <fieldset class="details">
+                <legend>--Personal Details--</legend>
             <div class="name-area">
                 <label> Name:
                 <input type="text" id="name" name="name-field" placeholder="Enter your name" required>
@@ -46,6 +46,8 @@
                 </label>
             </div>
             </fieldset>
+<fieldset class="feedback">
+<legend>--Feedback--</legend>
            
 <div class="star-rating">
     
@@ -73,12 +75,16 @@
     </select>
 </div>
 
+
+            <label for="feedback" class="feedback">Your feedback:</label>
             <textarea name="" id="feedback" placeholder="write your feedback...." required></textarea>
+</fieldset>
             <button class="blueButton" type="submit">Submit review</button>
             <button class="greyButton" type="reset">Cancel</button>
 
         </form>
     </div>
+    
 <footer>
     <div class="footercontent">
         <img src="../image/logo.png" alt="logo" id="footerLogo">
