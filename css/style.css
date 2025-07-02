@@ -16,7 +16,7 @@
     --dark-blue: #000716;
     --darker-blue: #00030a;
     --navy: #022938;
-    --light-blue: #007bff;
+    --light-blue: #0056b3;
     --red: #da0606;
     --peach: #d9a494;
     --brown: #7b2e24;
@@ -48,12 +48,14 @@ html {
 ==========================*/
 
 header {
-    width: 100vw;
-    height: 100px;
+    width: 100%;
+    height: 80px;
     position: fixed;
-    top: 0;
+    top: 5px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    border-radius: 20px;
     /* background-color: var(--dark-blue); */
     background-image: var(--blue-gradient);
     color: white;
