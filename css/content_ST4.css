@@ -1,0 +1,23 @@
+.content-section{
+    background-color: aliceblue;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: black;
+    height: auto;
+    min-height: 50vh;
+    
+    /* margin: 40px; */
+    padding: 20px;
+    text-align: center;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#section1{
+    margin-top: 100px;
+
+}
