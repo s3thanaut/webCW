@@ -11,11 +11,11 @@
     /* colours */
     --dark-gray: #3c3c3c;
     --gray: #606060;
-    --ash: #9c9c9c;
+    --ash: #9f9f9f;
     --black: #030303;
     --dark-blue: #000716;
     --darker-blue: #00030a;
-    --navy: #022938;
+    --navy: #111631;
     --light-blue: #0056b3;
     --red: #da0606;
     --peach: #d9a494;
@@ -61,6 +61,7 @@ header {
     /* background-color: var(--dark-blue); */
     background-image: var(--blue-gradient);
     color: white;
+    z-index: 10;
 }
 
 .navbar {
@@ -97,21 +98,9 @@ header {
 }
 
 #headerLogo {
-    max-width: 70px;
-    margin: 10px;
-}
-
-#check {
-    display: none;
-}
-
-#burger {
-    display: none;
-    cursor: pointer;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    translate: 0 -50%;
+    position: relative;
+    width: 70px;
+    margin: auto 10px;
 }
 
 /*=================================
@@ -157,6 +146,7 @@ a:active {
         bottom: 20px;
         right: 20px;
         cursor: pointer;
+        z-index: 10;
 
         transition: ease 300ms; 
 }
@@ -176,22 +166,32 @@ footer {
     color: white;
 }
 
-#footerLogo {
-    max-width: max(50px, 10%);
-    margin: 10px;
-}
-
 .footercontent {
     display:flex;
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: center;
+}
+
+#footerLogos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    padding: 10px;
+
+}
+
+.siteLogo {
+    max-height: 100px;
+    margin: 10px;
 }
 
 footer ul {
     list-style: none;
-    font-family: var(--font-serif), serif;
+    font-family: var(--font-sans-serif), sans-serif;
     font-weight: 300;
     padding: 10px;
+    margin-right: 200px;
 }
 
 footer ul li{
@@ -212,6 +212,10 @@ footer ul li a:hover {
 footer ul li a:active {
     transition: 0s;
     color: var(--navy);
+}
+
+footer ul li a:visited {
+    color: gray;
 }
 
 #copyright {
@@ -316,7 +320,7 @@ footer ul li a:active {
 
 .slow-spin {
     color: var(--navy);
-    animation: spin linear 17s infinite;
+    animation: spin linear 25s infinite;
 }
 
 @keyframes spin {

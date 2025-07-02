@@ -1,22 +1,24 @@
+@import "style.css";
+
 /* ---------------- GLOBAL THEME COLORS ---------------- */
-:root {
-  --main-blue: #1976d2;
-  --hover-blue: #0d47a1;
-  --white: #ffffff;
-  --light-gray: #f4f4f4;
-  --dark-text: #222;
-  --footer-bg: #0e2c43;
-  --footer-text: #cfd8dc;
-  --link-blue: #2196f3;
-}
+  /* :root {
+    --main-blue: #1976d2;
+    --hover-blue: #0d47a1;
+    --white: #ffffff;
+    --light-gray: #f4f4f4;
+    --dark-text: #222;
+    --footer-bg: #0e2c43;
+    --footer-text: #cfd8dc;
+    --link-blue: #2196f3;
+  } */
 
 /* ---------------- BODY & GENERAL ---------------- */
-body {
+/* body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--light-gray);
+  background-color: var(--dark-blue);
   color: var(--dark-text);
-}
+} */
 
 h1 {
   text-align: center;
@@ -34,26 +36,28 @@ svg {
 }
 
 .node {
-  fill: var(--main-blue);
+  fill: var(--light-blue);
   rx: 8;
   ry: 8;
   transition: 0.3s ease;
   cursor: pointer;
   stroke: #fff;
   stroke-width: 2;
+
+  padding: 10px;
 }
 
 .node:hover,
 .node:focus {
-  fill: var(--hover-blue);
+  fill: white;
   filter: drop-shadow(0 0 8px var(--link-blue));
   outline: none;
 }
 
 text {
   fill: var(--white);
-  font-size: 13px;
-  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  font-family: var(--font-sans-serif);
   pointer-events: none;
 }
 
@@ -63,7 +67,7 @@ line {
 }
 
 /* ---------------- HEADER ---------------- */
-header {
+/* header {
   background-color: var(--main-blue);
   color: var(--white);
   display: flex;
@@ -115,10 +119,10 @@ header {
 .blueButton:hover {
   background-color: var(--hover-blue);
   color: var(--white);
-}
+} */
 
 /* ---------------- FOOTER ---------------- */
-footer {
+/* footer {
   background-color: var(--footer-bg);
   color: var(--footer-text);
   padding: 2rem 5%;
@@ -167,7 +171,7 @@ footer hr {
   text-align: center;
   font-size: 0.9rem;
   color: #aaa;
-}
+} */
 
 /* ---------------- RESPONSIVENESS ---------------- */
 @media (max-width: 768px) {
