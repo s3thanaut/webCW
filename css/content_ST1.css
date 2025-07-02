@@ -3,7 +3,7 @@
 
 .side-nav {
   position: fixed;
-  top: 100px;
+  top: 106px;
   left: 0;
   width: 180px;
   background: rgba(20, 30, 50, 0.98);
@@ -15,7 +15,7 @@
   min-height: 300px;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.3rem;
 }
 .side-nav ul {
   list-style: none;
@@ -23,7 +23,7 @@
   margin: 0;
 }
 .side-nav li {
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 .side-nav a {
   color: #4ec3fa;
@@ -44,9 +44,9 @@
 
 .main-content {
   min-height: 100vh;
-  background: #0b0124;
+  /* background: #0b0124; */
   color: #fff;
-  padding: 2rem 0;
+  padding: .5rem 0;
   margin-left: 200px;
   margin-right:20px;
 }
