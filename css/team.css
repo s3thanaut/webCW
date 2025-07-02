@@ -4,11 +4,12 @@
 
 .main-container {
     display: flex;
+    justify-content:space-evenly  ;
 }
 .container {
   position: relative;
   
-  width: 50%;
+  width: 20%;
 }
 header{
     z-index:100;
@@ -37,7 +38,10 @@ header{
   width: 100%;
   left: 0;
 }
+.student1{
 
+
+}
 .text {
   color: white;
   font-size: 20px;
@@ -48,4 +52,9 @@ header{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   white-space: nowrap;
+  font-family: var(--font-sans-serif);
 }
+.team{
+  text-align:center;
+}
+
