@@ -3,9 +3,6 @@
 @import "content.css";
 
 
-
-
-
 .main-content {
   min-height: 100vh;
   /* background: #0b0124; */
@@ -17,8 +14,7 @@
 }
 
 .main-content section {
-  max-width: 1300px;
-  margin: 0 auto 2rem auto;
+  margin: 0 4rem 2rem 4rem;
   background: rgba(30, 40, 60, 0.85);
   border-radius: 18px;
   box-shadow: 0 4px 32px 0 rgba(0,0,0,0.4);
@@ -28,7 +24,7 @@
 
 .intro-section {
   text-align: center;
-  margin-top: 50px;
+  
 }
 
 .main-content h2, .main-content h3 {
