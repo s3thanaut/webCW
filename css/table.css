@@ -1,0 +1,57 @@
+@import "style.css";
+
+.content-table {
+    margin: 20px;
+    border-collapse: collapse;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.content-table thead {
+    background-color: var(--light-blue);
+    font-weight: bold;
+}
+
+.content-table tbody tr {
+    border-bottom: solid 1px var(--dark-gray);
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: solid 5px var(--light-blue);
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: var(--darker-blue);
+}
+
+.content-table th, .content-table td {
+    padding: 15px;
+}
+
+.cr {
+    background-color: var(--red);
+    font-weight: 500;
+}
+
+.cr::before {
+    content: '$';
+    font-weight: 300;
+    color: white;
+}
+
+.en {
+    color: var(--red);
+    font-weight: 500;
+}
+
+.vu {
+    color: #ffcc00;
+    font-weight: 500;
+}
+
+#table-logo {
+    padding: 5px;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+    max-width: 50px;
+}

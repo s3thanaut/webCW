@@ -1,8 +1,7 @@
-/* This stylesheet is used only for general styling. seperate styling sheets and embeded styling is used to make changes unique to individual pages*/
-
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+
 
 /*================
     Variables
@@ -14,9 +13,11 @@
     --gray: #606060;
     --ash: #9c9c9c;
     --black: #030303;
-    --dark-blue: #051b4d;
+    --dark-blue: #000716;
+    --darker-blue: #00030a;
     --navy: #022938;
     --light-blue: #007bff;
+    --red: #da0606;
     --peach: #d9a494;
     --brown: #7b2e24;
     --lime: #36f640;
@@ -25,8 +26,10 @@
     --blue-gradient: linear-gradient(30deg, #000613, #051b4d);
 
     /* fonts */
-    --font-sans-serif: "Montserrat";
+    --font-sans-serif: "Poppins";
     --font-serif: "Noto Serif";
+
+    /* effects */
 }
 
 
@@ -38,7 +41,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding: 10rem;
+    scroll-padding: 100px;
 }
 
 /*==========================
@@ -47,6 +50,7 @@ html {
 
 header {
     width: 100vw;
+    height: 100px;
     position: fixed;
     top: 0;
     display: flex;
@@ -113,8 +117,9 @@ header {
 
 body {
     padding-top: 100px;
-    background-color: var(--ash);
+    background-color: var(--dark-blue);
     color: white;
+    font-family: var(--font-sans-serif)
 }
 
 p, label, input , textarea{
@@ -136,11 +141,26 @@ a:link {
 }
 
 a:hover {
-    color: var(--peach);
+    color: white;
 }
 
 a:active {
     color: var(--brown);
+}
+
+/* To the top button */
+#totop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+
+        transition: ease 300ms; 
+}
+
+#totop:hover {
+        transform: scale(1.1);
+        color: var(--light-blue);
 }
 
 /*==================================
@@ -154,7 +174,7 @@ footer {
 }
 
 #footerLogo {
-    max-width: max(100px, 15%);
+    max-width: max(80px, 15%);
     margin: 10px;
 }
 

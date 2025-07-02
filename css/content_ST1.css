@@ -1,0 +1,91 @@
+/* Side Navigation Styles */
+@import "style.css";
+
+.side-nav {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 180px;
+  background: rgba(20, 30, 50, 0.98);
+  border-radius: 0 18px 18px 0;
+  box-shadow: 2px 0 16px 0 rgba(0,0,0,0.2);
+  z-index: 1000;
+  padding: 1.5rem 0.5rem 1.5rem 1rem;
+  height: auto;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.side-nav li {
+  margin-bottom: 1.2rem;
+}
+.side-nav a {
+  color: #4ec3fa;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: color 0.2s;
+  padding: 0.3rem 0.5rem;
+  border-radius: 8px;
+  display: block;
+}
+.side-nav a:hover, .side-nav a:focus {
+  background: #223a5e;
+  color: #fff;
+}
+
+
+
+.main-content {
+  min-height: 100vh;
+  background: #0b0124;
+  color: #fff;
+  padding: 2rem 0;
+  margin-left: 200px
+}
+
+.main-content section {
+  max-width: 1000px;
+  margin: 0 auto 2rem auto;
+  background: rgba(30, 40, 60, 0.85);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.4);
+  padding: 2rem 2.5rem;
+}
+
+.intro-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.main-content h2, .main-content h3 {
+  color: #4ec3fa;
+  margin-bottom: 1rem;
+}
+
+.contentimg {
+  margin-top: 3%;
+  
+  width: 100%;
+  max-width: 700px;
+  border-radius: 30px;
+  height: auto;
+  }
+  
+#contentimg5 {
+max-height: 480px;
+max-width: 700px;
+
+
+}
+
+
+.main-content p {
+  font-size: 1.1rem
+}
