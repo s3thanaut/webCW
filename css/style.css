@@ -48,14 +48,16 @@ html {
 ==========================*/
 
 header {
-    width: 100%;
+    width: 98%;
     height: 80px;
     position: fixed;
-    top: 5px;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 40px;
     /* background-color: var(--dark-blue); */
     background-image: var(--blue-gradient);
     color: white;
