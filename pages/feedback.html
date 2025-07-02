@@ -28,7 +28,7 @@
     </div>
 </header>
     
-    <div class="container">
+<div class="container">
         <h2>Leave a review</h2>
         <form name="myForm" action="#"   method="post" >
 
@@ -39,9 +39,12 @@
                 <label> Email address:
                 <input type="email" id="email" name="email-field" placeholder="Enter your email" required>
                 </label>
+                <label> Home address:
+                    <input type="text" class="address" name="address-field" placeholder="Enter your home address" required>
+                </label>
             </div>
            
-            <div class="star-rating">
+<div class="star-rating">
     
     <input type="radio" id="star5" name="rating" value="5">
     <label for="star5">&#9733;</label>
@@ -57,9 +60,19 @@
     <input type="radio" id="star1" name="rating" value="1">
     <label for="star1">&#9733;</label>
 </div>
+<div class="drop-down">
+    <label for="messaging" class="messaging">How did you hear about us?</label>
+    <select class="messaging" name="messaging">
+        <option value="search">Search Engine</option>
+        <option value="social">Social Media</option>
+        <option value="friend">Friend/Family</option>
+        <option value="other">Other</option>
+    </select>
+</div>
 
             <textarea name="" id="feedback" placeholder="write your feedback...." required></textarea>
             <button class="blueButton" type="submit">Submit review</button>
+
         </form>
     </div>
 <footer>

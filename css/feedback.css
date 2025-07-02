@@ -89,3 +89,12 @@ textarea {
 .star-rating label:hover ~ label {
     color: #ff9800;
 }
+
+select{
+    padding: 10px;
+    background-color: #000716;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    
+}
