@@ -33,7 +33,7 @@
     font-weight: 500;
 }
 
-.cr::after {
+.cr::before {
     content: '$';
     font-weight: 300;
     color: white;
