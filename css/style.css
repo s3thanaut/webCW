@@ -2,7 +2,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
 /*================
     Variables
@@ -27,7 +27,7 @@
     --blue-gradient: linear-gradient(30deg, #000613, #051b4d);
 
     /* fonts */
-    --font-sans-serif: "Montserrat";
+    --font-sans-serif: "Poppins";
     --font-serif: "Noto Serif";
 
     /* effects */
@@ -174,7 +174,7 @@ footer {
 }
 
 #footerLogo {
-    max-width: max(100px, 15%);
+    max-width: max(80px, 15%);
     margin: 10px;
 }
 
