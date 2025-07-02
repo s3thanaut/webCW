@@ -72,6 +72,8 @@ section {
   padding: 25px 30px;
   margin-bottom: 30px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  height: auto;
+  
 }
 
 /* Lists & Info */
@@ -110,6 +112,7 @@ ul {
   gap: 20px;
   flex-wrap: wrap;
   padding: 0;
+  
 }
 
 .volunteer-icons li,
@@ -122,6 +125,8 @@ ul {
   border-radius: 14px;
   transition: background-color 0.3s;
   color: #fff;
+  min-width: 600px;
+  
 }
 
 .volunteer-icons li:hover,
