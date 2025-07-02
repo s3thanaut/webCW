@@ -1,7 +1,9 @@
 /* Side Navigation Styles */
+@import "style.css";
+
 .side-nav {
   position: fixed;
-  top: 80px;
+  top: 100px;
   left: 0;
   width: 180px;
   background: rgba(20, 30, 50, 0.98);
@@ -38,35 +40,14 @@
   color: #fff;
 }
 
-@media (max-width: 900px) {
-  .side-nav {
-    position: static;
-    width: 100%;
-    border-radius: 0;
-    box-shadow: none;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0.5rem 0;
-    min-height: unset;
-    background: #18243a;
-    margin-bottom: 1rem;
-  }
-  .side-nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-    width: 100%;
-    justify-content: center;
-  }
-  .side-nav li {
-    margin-bottom: 0;
-  }
-}
+
+
 .main-content {
   min-height: 100vh;
   background: #0b0124;
   color: #fff;
   padding: 2rem 0;
+  margin-left: 200px
 }
 
 .main-content section {
@@ -80,6 +61,7 @@
 
 .intro-section {
   text-align: center;
+  margin-top: 50px;
 }
 
 .main-content h2, .main-content h3 {
@@ -91,7 +73,7 @@
   margin-top: 3%;
   
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
   border-radius: 30px;
   height: auto;
   }
@@ -107,4 +89,3 @@ max-width: 700px;
 .main-content p {
   font-size: 1.1rem
 }
-@import "style.css";
