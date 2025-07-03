@@ -1,10 +1,11 @@
 @import "style.css";
 
 .content-table {
-    margin: 20px;
+    margin: 20px auto 20px auto;
     border-collapse: collapse;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
+    
 }
 
 .content-table thead {

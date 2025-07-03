@@ -125,11 +125,23 @@ body {
 #fish-spinner {
         position: absolute;
         z-index: -1;
-        scale: 3;
-        opacity: 0.5;
+        scale: 3.5;
+        opacity: 0.6;
+}
+
+#fish-spinner2 {
+        position: absolute;
+        z-index: -1;
+        scale: 1.75;
+        opacity: 0.3;
 }
 
 
 /*======================
         content
 ======================*/
+
+#content h1 {
+        font-size: 3rem;
+        text-align: center;
+}
