@@ -1,4 +1,4 @@
-/* Start of the  */
+/* Start of the side bar navigation */
 .side-nav {
   position: fixed;
   top: 106px;
@@ -37,6 +37,48 @@
   background: #223a5e;
   color: #fff;
 }
+/* End of Side bar navigation menu*/
 
 
-/* End of Side bar navigation */
+
+/* Creating a Common css Sections for content pages of all the students */
+.main-content {
+  min-height: 100vh;
+  color: #fff;
+  padding: .5rem 0;
+  margin-left: 200px;
+  margin-right:20px;
+  
+}
+
+.main-content section {
+  margin: 0 4rem 2rem 4rem;
+  background: rgba(30, 40, 60, 0.85);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.4);
+  padding: 2rem 2.5rem;
+  height: auto;
+}
+
+.intro-section {
+  text-align: center;
+  
+}
+
+.main-content h2, .main-content h3 {
+  color: #4ec3fa;
+  margin-bottom: 1rem;
+}
+
+.contentimg {
+  margin-top: 3%;
+  
+  width: 100%;
+  max-width: 700px;
+  border-radius: 30px;
+  height: auto;
+  }
+  
+.main-content p {
+  font-size: 1.1rem
+}
