@@ -80,6 +80,56 @@ body {
 ======================*/
 
 
+#mission {
+        position: relative;
+}
+
+#mission div{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        height: calc(100% - 200px);
+        margin: 50px auto;
+        padding: 100px 50px 20px 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+        background-color: var(--navy);
+        border-radius: 20px;
+        overflow: hidden;
+
+}
+
+#mission h1 {
+        position: absolute;
+        font-size: 3rem;
+        top: 0;
+        margin: 0 auto;
+}
+
+#mission p {
+        max-width: 60ch;
+        font-weight: 500;
+        font-size: 1.2rem;
+        text-align: justify;
+}
+
+#mission img {
+        max-height: 300px;
+        border-radius: 20px;
+}
+
+#fish-spinner {
+        position: absolute;
+        z-index: -1;
+        scale: 3;
+        opacity: 0.5;
+}
+
+
 /*======================
         content
 ======================*/

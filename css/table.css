@@ -13,12 +13,13 @@
 }
 
 .content-table tbody tr {
+    color: var(--ash);
     border-bottom: solid 1px var(--dark-gray);
     transition: 300ms ease;
 }
 
 .content-table tbody tr:hover {
-    color: var(--light-blue);
+    color: white;
 }
 
 .content-table tbody tr:last-of-type {
@@ -45,6 +46,10 @@
     font-weight: 900;
     margin-right: 10px;
     
+}
+
+.cr:hover .cr::before {
+    animation: spin 1s ease-in-out;
 }
 
 .en {
