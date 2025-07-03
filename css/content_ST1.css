@@ -31,19 +31,18 @@
 .main-content h2, .main-content h3 {
   color: #4ec3fa;
   margin-bottom: 1rem;
-  
 }
-
 
 .contentimg {
   margin-top: 3%;
+  
   width: 100%;
   max-width: 600px;
   border-radius: 30px;
   height: auto;
   margin-left: 3rem;
   }
-  
+
 .main-content p {
   font-size: 1.3rem;
   margin-left: 3rem;
