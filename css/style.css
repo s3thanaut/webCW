@@ -140,6 +140,10 @@ a:active {
     color: var(--brown);
 }
 
+a:visited {
+    color: var(--ash);
+}
+
 /* To the top button */
 #totop {
         position: fixed;
