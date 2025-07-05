@@ -86,5 +86,14 @@
   }
   
 .main-content p {
-  font-size: 1.1rem
+  font-size: 1.1rem;
+}
+
+.main-content ul {
+  padding-left: 100px;
+}
+.main-content li {
+  font-size: 1.1rem;
+  width: 60ch;
+  padding-bottom: 1rem;
 }
