@@ -17,12 +17,15 @@ header {
   z-index: 1000;
 }
 
-footer {
-  color: #ccc;
-  padding: 1rem;
-  text-align: center;
-  z-index: 10;
-  position: relative;
+.imgvol {
+  max-width: 65%;
+  border-radius: 40px;
+  box-shadow: 0 0 20px var(--dark-blue);
+  filter: brightness(80%);
+}
+
+#imgvol4 {
+  max-width: 50%;
 }
 
 .vol-bg-container {
@@ -45,16 +48,15 @@ footer {
 }
 
 .volcontent {
-  backdrop-filter: blur(7px);
   position: relative;
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 120px; /* Prevents overlap with fixed header */
-  padding-bottom: 120px; /* Leaves space for footer */
+  padding: 120px 0;
   box-sizing: border-box;
   flex-grow: 1;
+  backdrop-filter: blur(7px);
 }
 
 .card-container {
@@ -63,23 +65,17 @@ footer {
   gap: 3rem;
   justify-content: center;
   align-items: center;
-  width: 100%;
   max-width: 800px;
+  width: 100%;
   margin: 0 auto;
-  box-sizing: border-box;
-  padding: 0 2vw;
-  overflow-wrap: break-word;
 }
 
-
 .vol-card {
-  background: rgba(191, 185, 224, 0.85);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  background: rgba(191, 185, 224, 0.66);
+  box-shadow: 0 4px 24px black;
   border-radius: 16px;
-  padding: 2rem 1.5rem;
-  min-width: 340px;
+  padding: 2rem 1.5rem 1rem;
   color: #051b4d;
-  z-index: 2;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -91,6 +87,6 @@ footer {
 
 @keyframes fadeInOut {
   0% { opacity: 0; }
-  20% { opacity: 1; }
-  80% { opacity: 1; }
+  40% { opacity: 1; }
+
 }

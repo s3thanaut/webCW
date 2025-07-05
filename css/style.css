@@ -150,7 +150,7 @@ a:visited {
         bottom: 20px;
         right: 20px;
         cursor: pointer;
-        z-index: 10;
+        z-index: 100;
 
         transition: ease 300ms; 
 }
@@ -316,6 +316,26 @@ footer ul li a:visited {
 .peachButton:active{
     transition: 0s;
     opacity: 0.4;
+}
+
+.whiteButton {
+    background-color: transparent;
+
+    border: solid 2px white;
+    border-radius: 50px;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0 1.5ch;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: 300ms ease;
+}
+
+.whiteButton:hover{
+    transform: scale(1.1);
 }
 
 /*==================================

@@ -120,22 +120,28 @@ body {
         text-align: justify;
 }
 
-#mission img {
+#sdglogo {
         max-height: 300px;
+        cursor: pointer;
         /* border-radius: 10px; */
+        transition: 300ms ease;
+}
+
+#sdglogo:hover {
+        box-shadow: 0 0 20px white;
 }
 
 #fish-spinner {
         position: absolute;
         z-index: -1;
-        scale: 3.5;
+        scale: 2.3;
         opacity: 0.6;
 }
 
 #fish-spinner2 {
         position: absolute;
         z-index: -1;
-        scale: 1.75;
+        scale: 1.2;
         opacity: 0.3;
 }
 
@@ -168,12 +174,12 @@ body {
 .card img {
         max-height: 400px;
         transform: translate(-20%, 0);
+        filter: brightness(60%);
 }
 
 .card-overlay {
         position: absolute;
         top: 0;
-        background-color: var(--dark-blue);
         height: 100%;
         width: 100%;
         display: flex;
@@ -186,9 +192,35 @@ body {
 }
 
 .card:hover .card-overlay {
-        opacity: 0.6;
+        opacity: 1;
 }
 
-.card p {
+.card-content {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px 5px;
+        width: 25ch;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+        /* background-color: var(--dark-blue); */
+        border-radius: 20px;
+        backdrop-filter: brightness(50%);
+}
 
+.green-background {
+        background-color: var(--green);
+}
+
+.red-background {
+        background-color: var(--red);
+}
+
+.brown-background {
+        background-color: var(--brown);
+}
+
+.blue-background {
+        background-color: var(--light-blue);
 }
