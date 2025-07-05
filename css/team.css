@@ -33,6 +33,7 @@ header{
   width: 0;
   height: 100%;
   transition: .5s ease;
+  border-radius: 200px;
 }
 
 .container:hover .overlay {
@@ -54,4 +55,13 @@ header{
 }
 .team{
   text-align:center;
+}
+
+section {
+  margin: 0 5rem 2rem 5rem;
+  background: rgba(30, 40, 60, 0.85);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.4);
+  padding: 2rem 2.5rem;
+  height: auto;
 }
