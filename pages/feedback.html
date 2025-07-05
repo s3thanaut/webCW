@@ -31,7 +31,7 @@
     
 <div class="container">
         <h2>Leave a review</h2>
-        <form name="myForm" action="#"   method="post" >
+        <form name="myForm"  onsubmit="return validateEmail()" >
             <fieldset >
                 <legend>--Personal Details--</legend>
             <div class="name-area">
@@ -39,8 +39,11 @@
                 <input type="text" id="name" name="name-field" placeholder="Enter your name" required>
                 </label>
                 <label> Email address:
-                <input type="email" id="email" name="email-field" placeholder="Enter your email" required>
+                <input type="text" class="error-border" id="email" name="email-field" placeholder="Enter your email" required>
                 </label>
+                <div id="emailError" class="error">Please enter a valid email address.</div>
+               
+                
                 <label> Home address:
                     <input type="text" class="address" name="address-field" placeholder="Enter your home address" required>
                 </label>
@@ -84,6 +87,23 @@
 
         </form>
     </div>
+ <script>
+     function validateEmail() {
+    const emailInput = document.getElementById("email");
+    const errorMsg = document.getElementById("emailError");
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!pattern.test(emailInput.value.trim())) {
+      errorMsg.style.display = "block";              // show error message
+      emailInput.classList.add("error-border");      // add red border
+      return false;
+    } else {
+      errorMsg.style.display = "none";               // hide error message
+      emailInput.classList.remove("error-border");   // remove red border
+      return true;
+    }
+  }
+  </script>
     
 <!-- Footer section start -->
 <footer>

@@ -162,3 +162,18 @@ fieldset {
     border-radius: 8px;
     border-width: 3px;
 }
+
+
+.error {
+  display: none;
+  color: #e63946;  /* red */
+  font-size: 14px;
+  margin-top: 6px;
+  margin-left: 5px;
+  
+}
+
+.error-border {
+  border: 2px solid #e63946;
+  outline: none;
+}
