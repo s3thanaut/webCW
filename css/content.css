@@ -65,9 +65,15 @@
   
 }
 
+.main-content h1 {
+  color: #4ec3fa;
+  font-size: 3rem;
+}
+
 .main-content h2, .main-content h3 {
   color: #4ec3fa;
   margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 .contentimg {
