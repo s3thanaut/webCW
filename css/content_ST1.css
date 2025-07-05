@@ -6,6 +6,7 @@
 .main-content {
   min-height: 100vh;
   /* background: #0b0124; Test background */
+
   color: #fff;
   padding: .5rem 0;
   margin-left: 200px;
@@ -35,20 +36,20 @@
 
 .contentimg {
   margin-top: 3%;
-  
   width: 100%;
   max-width: 600px;
   border-radius: 30px;
   height: auto;
-  margin-left: 3rem;
-  margin-right: 3rem;
   }
+#contentimgalign {
+margin-left: 50px;
+margin-right: 50px;
+}
 
 .main-content p {
   font-size: 1.3rem;
   margin-left: 3rem;
-  margin-right: 5rem;
-
+  margin-right: 5rem; 
 }
 
 .help-reefs{
