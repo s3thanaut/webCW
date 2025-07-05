@@ -14,18 +14,22 @@ main {
 }
 aside {
     flex: 1;
-    background-color:#2A004E;
+    background-color:var(--navy);
     padding: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--light-blue);
     margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
     
     
 }
+
 section {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #ddd;
-    background-color: #fafafa;
+    border: 1px solid var(--light-blue);
+    background-color: var(--navy);
+    border-radius: 20px;
 }
 
 .ref li{
@@ -73,4 +77,15 @@ aside li{
 
 img{
     width: 90%;
+}
+
+.top-level-ul li {
+    list-style-type: none;
+    font-weight: bold;
+    color: white;   
+}
+
+.top-level-ul ul li {
+    font-weight: 500;
+    list-style-type: none;
 }
