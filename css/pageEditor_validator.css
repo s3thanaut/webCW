@@ -1,9 +1,4 @@
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 .container {
     display: flex;
@@ -27,12 +22,6 @@ section {
     padding: 15px;
     border: 1px solid #ddd;
     background-color: #fafafa;
-}
-header, footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
 }
 
 .ref li{

@@ -40,14 +40,16 @@
   max-width: 600px;
   border-radius: 30px;
   height: auto;
-  margin-left: 20px;
-  /* margin-right: 3rem; */
   }
+#contentimgalign {
+margin-left: 50px;
+margin-right: 50px;
+}
 
 .main-content p {
   font-size: 1.3rem;
   margin-left: 3rem;
-  margin-right: 5rem;
+  margin-right: 5rem; 
 }
 
 .help-reefs{
