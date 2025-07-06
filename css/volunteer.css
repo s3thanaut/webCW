@@ -56,13 +56,13 @@ header {
   padding: 120px 0;
   box-sizing: border-box;
   flex-grow: 1;
-  backdrop-filter: blur(7px);
+  backdrop-filter: blur(20px);
 }
 
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 40px;
   justify-content: center;
   width: 100%;
   margin: 0 auto;
@@ -88,4 +88,31 @@ header {
   0% { opacity: 0; }
   40% { opacity: 1; }
 
+}
+
+.feedback {
+  background: rgba(191, 185, 224, 0.66);
+  box-shadow: 0 4px 24px black;
+  border-radius: 16px;
+  padding: 2rem 0 2rem 0;
+  color: #051b4d;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 40%;
+  justify-content: center;
+  margin-right: 43%;
+}
+
+.form {
+  background: rgba(191, 185, 224, 0.66);
+  box-shadow: 0 4px 24px black;
+  padding: 2rem 1.5rem 2rem;
+  color: #051b4d;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 16px;
+  margin-left: 40%;
 }
