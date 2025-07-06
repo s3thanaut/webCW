@@ -29,7 +29,7 @@
 </header
 
     <section class="stud">
-        <h2>Student name, student role</h2>
+        <h2>Lavan : Student 1</h2>
     </section>
 
     <div class="container">
@@ -41,10 +41,19 @@
             <section>
                 <h2 id="splash">Splash Page</h2>
                     <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
-                    
+                        <p>
+                            The splash page uses basic HTML and CSS to create a clean, animated intro screen. The <code>&lt;head&gt;</code> section includes a linked stylesheet, favicon, and a meta tag for redirecting to the homepage after 6 seconds. Structurally, <code>&lt;div&gt;</code> containers organize content like the title and team names using <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> tags.
+                        </p>
+                        <p>
+                            CSS uses <code>height: 100vh</code> and Flexbox in <code>.splash-screen</code> to center content, while a background gradient (set via a CSS variable) adds visual appeal. The <code>.splash-text</code> uses absolute positioning and the <code>@keyframes fadeInOut</code> animation to smoothly fade content in and out. The logo is scaled and positioned using <code>translate</code> and <code>scale</code> for balance.
+                        </p>
+                        <p>
+                         These choices make the splash screen functional, responsive, and visually engaging, serving as a brief intro before redirecting to the main site.
+                        </p>
                     <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                        <p>
+                        Accessibility was considered by using clear and readable text with proper semantic tags like <code>&lt;h1&gt;</code> for headings and <code>&lt;p&gt;</code> for content, making it easier for screen readers to understand the page structure. The color contrast between the white text and dark background ensures readability for users with visual impairments. Images include <code>alt</code> text for screen reader support, and content is centered and spaced clearly for easier navigation across different screen sizes.
+                        </p>
                     
                     <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
                         <p><a href="validation_ST0.html#splashVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
