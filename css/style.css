@@ -190,7 +190,7 @@ footer {
     margin: 10px;
 }
 
-footer ul {
+.footerlinks {
     list-style: none;
     font-family: var(--font-sans-serif), sans-serif;
     font-weight: 300;
@@ -198,28 +198,24 @@ footer ul {
     margin-right: 200px;
 }
 
-footer ul li{
+.footerlinks li{
     margin: 5px 0;
 }
 
-footer ul li a:link{
+.footerlinks li a{
     color: white;
     text-decoration: none;
 
     transition: 300ms ease;
 }
 
-footer ul li a:hover {
+.footerlinks li a:hover {
     color: var(--light-blue);
 }
 
-footer ul li a:active {
+.footerlinks li a:active {
     transition: 0s;
     color: var(--navy);
-}
-
-footer ul li a:visited {
-    color: gray;
 }
 
 #copyright {

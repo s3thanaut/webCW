@@ -97,3 +97,10 @@
   width: 60ch;
   padding-bottom: 1rem;
 }
+
+figcaption {
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--gray);
+}
