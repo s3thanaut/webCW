@@ -61,11 +61,9 @@ header {
 
 .card-container {
   display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
-  align-items: center;
-  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
@@ -78,6 +76,7 @@ header {
   color: #051b4d;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
+  max-width: 40%;
 }
 
 .vol-card:hover {
