@@ -1,6 +1,9 @@
 
 @import "style.css";
 
+#name {
+    text-align: center;
+}
 
 .container {
     display: flex;
