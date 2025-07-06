@@ -52,9 +52,11 @@ aside li{
 .stud {
     text-align: center;
     line-height: 0;
-    background-color: #cbccc2ef;
+    background-color: var(--navy);
     color: white;
     margin-top: 8px;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 
 .top {
