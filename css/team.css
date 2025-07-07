@@ -43,7 +43,7 @@ header{
 
 .text {
   color: white;
-  font-size: 1rem;
+  font-size: 0.9rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -64,4 +64,7 @@ section {
   box-shadow: 0 4px 32px 0 rgba(0,0,0,0.4);
   padding: 2rem 2.5rem;
   height: auto;
+}
+ .student1-text{
+  font-size: 0.85rem;
 }
