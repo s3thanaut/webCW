@@ -94,7 +94,7 @@
 }
 .main-content li {
   font-size: 1.1rem;
-  width: 60ch;
+  max-width: 60ch;
   padding-bottom: 1rem;
 }
 

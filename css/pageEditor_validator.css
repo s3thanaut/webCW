@@ -12,9 +12,11 @@
     margin: 0 auto;
     padding: 20px;
 }
+
 main {
     flex: 3;
 }
+
 aside {
     flex: 1;
     background-color:var(--navy);
