@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validator Page Student - provide your student name</title>
+
+    <link rel="stylesheet" href="../css/pageEditor_validator.css"> <!-- External CSS link -->
+
+</head>
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <header>
+    <div>
+        <a href="./home.html"><img src="../image/logo.png" alt="Logo" id="headerLogo"></a>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./volunteer.html">Volunteer</a></li>
+            <li><a href="./table.html">Table</a></li>
+            <li><a href="./sitemap.html">Site Map</a></li>
+            <li><a href="./feedback.html">Feedback</a></li>
+            <li><a href="./team.html">Team</a></li>
+        </ul>
+
+        <button class="blueButton" onclick="document.location='./profile.html'">Profile</button>
+    </div>
+</header>
+<div id="totop" class="fa fa-arrow-circle-up fa-3x" onclick="window.scrollTo({top: 0});"></div>
+
+    <section class="stud">
+        <h2>Anupa Vitharana : Student 3</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update the content of the following sections with the information that corresponds to the pages you implemented  -->
+
+            <section id="feedback">
+                <h2 >Feedback Page validation report</h2>
+                    <p>There were some issues identified during the validation such as missing end tags and incorrect image paths.</p> 
+                    <img src="..\validationSnapshots\Validaton_imgs_ST3\SS2.png">
+                                    
+                <h3>Back to Page Editor page</h3>
+                    <p><a href="pageEditor_ST3.html#feedback">Page editor</a></p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            </section>
+
+            <section id="team">
+                <h2 >Team Page validation report</h2>
+                <p>Same issue were there and made the neccessary adjusments.</p>
+                    <img src="..\validationSnapshots\Validaton_imgs_ST3\SS1.png">
+                                    
+                <h3>Back to Page Editor page</h3>
+                    <p><a href="pageEditor_ST3.html#team">Page editor</a></p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            </section>
+
+            <section id="content">
+                <h2 >Content Page validation report</h2>
+                <p>Same issue were there and made the neccessary adjusments.</p>
+                    <img src="..\validationSnapshots\Validaton_imgs_ST3\SS3.png">
+                                    
+                <h3>Back to Page Editor page</h3>
+                    <p><a href="pageEditor_ST3.html#content">Page editor</a></p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            </section>
+
+
+            
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="#feedback">Feedback page</a> </li>
+                        <li><a href="#team">Team page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+    <div class="footercontent">
+        <div id="footerLogos">
+            <img src="../image/logo.png" alt="logo" class="siteLogo">
+            <img src="../image/sdgLogoTr.png" alt="SDGLogo" class="siteLogo">
+        </div>
+    <div>
+        <h3>Page Editors</h3>
+        <ul class="footerlinks">
+            <li><a href="./pageEditor_ST1.html">Student 1</a></li>
+            <li><a href="./pageEditor_ST2.html">Student 2</a></li>
+            <li><a href="./pageEditor_ST3.html">Student 3</a></li>
+            <li><a href="./pageEditor_ST4.html">Student 4</a></li>
+        </ul>
+    </div></div>
+    <hr style="width: 95%; height: 0; border-color: gray; margin: 0 auto; text-align: center;">
+    <p id="copyright">&copy; 2025 WebDev Group 4</p>
+</footer>
+</body>
+</html>

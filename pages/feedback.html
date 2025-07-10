@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/feedback.css">
+
+</head>
+<body>
+    <header>
+    <div>
+        <a href="./home.html"><img src="../image/logo.png" alt="Logo" id="headerLogo"></a>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./volunteer.html">Volunteer</a>
+            <li><a href="./table.html">Table</a></li>
+            <li><a href="./sitemap.html">Site Map</a></li>
+            <li><a href="./feedback.html">Feedback</a></li>
+            <li><a href="./team.html">Team</a></li>
+        </ul>
+
+        <button class="blueButton" onclick="document.location='./profile.html'">Profile</button>
+    </div>
+</header>
+    
+<div class="container">
+        <h2>Leave a review</h2>
+        <form name="myForm"  onsubmit="return validateEmail()" >
+            <fieldset >
+                <legend>Personal Details</legend>
+            <div class="name-area">
+                <label> Name:
+                <input type="text" id="name" name="name-field" placeholder="Enter your name" required>
+                </label>
+                <label> Email address:
+                <input type="text" class="error-border" id="email" name="email-field" placeholder="Enter your email" required>
+                </label>
+                <div id="emailError" class="error">Please enter a valid email address.</div>
+               
+                
+                <label> Home address:
+                    <input type="text" class="address" name="address-field" placeholder="Enter your home address" required>
+                </label>
+            </div>
+            </fieldset>
+<fieldset >
+<legend>Feedback</legend>
+           
+<div class="star-rating">
+    
+    <input type="radio" id="star5" name="rating" value="5">
+    <label for="star5">&#9733;</label>
+
+    <input type="radio" id="star4" name="rating" value="4">
+    <label for="star4">&#9733;</label>
+
+    <input type="radio" id="star3" name="rating" value="3">
+    <label for="star3">&#9733;</label>
+    <input type="radio" id="star2" name="rating" value="2">
+    <label for="star2">&#9733;</label>
+    
+    <input type="radio" id="star1" name="rating" value="1">
+    <label for="star1">&#9733;</label>
+</div>
+<div class="drop-down">
+    <label for="how-know" class="how">How did you hear about us?</label>
+    <select id="how-know" class="how" name="how-know">
+        <option value="search">Search Engine</option>
+        <option value="social">Social Media</option>
+        <option value="friend">Friend/Family</option>
+        <option value="other">Other</option>
+    </select>
+</div>
+
+
+            <label for="feedback" class="feedback">Your feedback:</label>
+            <textarea  id="feedback" placeholder="write your feedback...." required></textarea>
+</fieldset>
+            <button class="blueButton" type="submit">Submit review</button>
+            <button class="greyButton" type="reset">Cancel</button>
+
+        </form>
+    </div>
+ <script>
+     function validateEmail() {
+    const emailInput = document.getElementById("email");
+    const errorMsg = document.getElementById("emailError");
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!pattern.test(emailInput.value.trim())) {
+      errorMsg.style.display = "block";              // show error message
+      emailInput.classList.add("error-border");      // add red border
+      return false;
+    } else {
+      errorMsg.style.display = "none";               // hide error message
+      emailInput.classList.remove("error-border");   // remove red border
+      return true;
+    }
+  }
+  </script>
+    
+<!-- Footer section start -->
+<footer>
+    <div class="footercontent">
+        <div id="footerLogos">
+            <img src="../image/logo.png" alt="logo" class="siteLogo">
+            <img src="../image/sdgLogoTr.png" alt="SDGLogo" class="siteLogo">
+        </div>
+    <div>
+        <h3>Page Editors</h3>
+        <ul class="footerlinks">
+            <li><a href="./pageEditor_ST1.html">Student 1</a></li>
+            <li><a href="./pageEditor_ST2.html">Student 2</a></li>
+            <li><a href="./pageEditor_ST3.html">Student 3</a></li>
+            <li><a href="./pageEditor_ST4.html">Student 4</a></li>
+        </ul>
+    </div></div>
+    <hr style="width: 95%; height: 0; border-color: gray; margin: 0 auto; text-align: center;">
+    <p id="copyright">&copy; 2025 WebDev Group 4</p>
+</footer>
+<!-- Footer section end -->
+
+
+</body>

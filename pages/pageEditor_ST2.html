@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Under Water</title>
+    <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/pageEditor_ST1.css">
+    <link rel="stylesheet" href="../css/pageEditor_validator.css">
+</head>
+
+<body>
+<header>
+    <div>
+        <a href="./home.html"><img src="../image/logo.png" alt="Logo" id="headerLogo"></a>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./volunteer.html">Volunteer</a>
+            <li><a href="./table.html">Table</a></li>
+            <li><a href="./sitemap.html">Site Map</a></li>
+            <li><a href="./feedback.html">Feedback</a></li>
+            <li><a href="./team.html">Team</a></li>
+        </ul>
+
+        <button class="blueButton" onclick="document.location='./profile.html'">Profile</button>
+    </div>
+</header>
+<!-- end of header section -->
+
+<section class="stud">
+    <h2>Siyath : Student 2</h2>
+</section>
+
+<div class="container">
+    <!-- Main content area -->
+    <main>
+
+        <!-- Update those first three sections for the pages you were responsible to implement -->
+
+        <section>
+            <h2 id="global">global CSS and Template</h2>
+                <h3>Technical Description</h3>
+                    <p>
+                        The global css (Saved as <code>style.css</code>) contains the all the main stylings used in site throughout all the pages. It also contains the stylings for the header and footer including the navbar stylings. <br>
+                        The same header and footer sections are used in all the pages to maintain consistancy. And in each stylesheet file corresponding to each page, the global stylesheet is imported by using <code>@import "style.css";</code> line.
+                    </p>
+                    <p>
+                        <code>background-image: linear-gradient()</code> is used to add the gradient in the background of the header and footer. links are made responsive using the <code>:hover</code> pseudoclass. The css code snippet <code>position: fixed;</code> is responsible for keeping the header with navbar still at the top of the page while scrolling.
+                    </p>
+                    <p>
+                        These arrangements made the <code>style.css</code> file accessible for all the pages, maintaining the generaly styilng consistant throughout the web site, and keeping the the styling of the header and the footer the same in all pages.
+                    </p>
+                <h3>Accessibility</h3>
+                    <p>
+                    The navigation section is nested in the <code>&lt;header&gt;</code> element, making it appear at the top of the page. And the footer is using the <code>&lt;footer&gt;</code> element for it to appear at the bottom of the page. <br>
+                    The Global stylesheet contains all the general stylings for pages, which are integrated seamlessly.
+                    </p>
+
+                <h3>Link to the page</h3>
+                    <p><a href="../css/style.css" target="_blank">Click here</a> to open the Stylesheet.</p>
+        </section>
+
+        <section>
+            <h2 id="home">Home page</h2>
+                <h3>Technical Description</h3>
+                    <p>
+                        Home page appears right after the splash screen. Contains a hero section with a video background. page sections are separated with <code>&lt;section&gt;</code> elements. Animations are used to enhance the visual appearance of the home page, making it attractive to visiters.
+                    </p>
+                    
+                <h3>Accessibility</h3>
+                    <p>
+                        The sections are included in <code>&lt;section&gt;</code> elements for easier accessibility for web browsers. All images contains alternative text for display if browser does not support the image display. <code>&lt;h1&gt;</code> elements are used to to make headers in each section. Subtle transitions are included in the elements so it reatct to the user interactions.
+                    </p>
+                
+                <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                    <p><a href="./validation_ST2.html#homeVal">Click here</a> to go to the validation page</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                <h3>Link to the page</h3>
+                    <p><a href="./home.html" target="_blank">Click here </a>to visit the home page.</p>
+        </section>
+
+        <section>
+            <h2 id="table">Table page</h2>
+                <h3>Technical Description</h3>
+                    <p>
+                        The table page contains the table that contains information about the endangered marine species. <br> 
+                        <code>&lt;table&gt;</code> element is used to initiate the table. <code>&lt;tr&gt;</code> element is used to add a table row. <code>&lt;thead&gt;</code> element is used to add the elements in the table head. <code>&lt;th&gt;</code> elements holds the column headings of the table. <code>rowspan</code> attribute is used to merge rows into the a single cell in a column.
+                    </p>
+                    
+                <h3>Accessibility</h3>
+                    <p>
+                        Tooltips are added to the column headers. When hovered on them the tooltips appears, describing the headers further.
+                    </p>
+                
+                <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                    <p><a href="./validation_ST2.html#tableVal">Click here </a>to go to the validation page</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                <h3>Link to the page</h3>
+                    <p><a href="./table.html" target="_blank">Click here </a>to visit the Table page.</p>
+        </section>
+
+        <section>
+            <h2 id="content">Content page</h2>
+                <h3>Technical Description</h3>
+                    <p>
+                        The content page also divided into sections using <code>&lt;section&gt;</code> elements. Each section contains sections of an article describing the effects of Ocean dumping.
+                    </p>
+                    
+                <h3>Accessibility</h3>
+                    <p>
+                        All the images are added with alternate text, which describes the image, visible if the the browser fails to load the corresponding image. The page contains an <code>&lt;aside&gt;</code> element which holds shortcut links to each section of the page.
+                    </p>
+                
+                <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                    <p><a href="./validation_ST2.html#contentVal">Click here</a> to go to the validation page</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                <h3>Link to the page</h3>
+                    <p><a href="./content_ST2.html" target="_blank">Click here </a>to visit the Content page.</p>
+        </section>
+
+        <section>
+            <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                <p>
+                    The main challenge i faced was positioning the elements of the pages while not messing with the layout. Also the Z-index of the elements plays a crucial role when showing the elements on the web page. The z-indices has to be managed with care, with the other elements in mind. <br>
+                    The Header and Footer are copied into all the pages of the site. Therefore, all the pages were viewd manually by me for any defects in those elements. the navigation bar was tested and ensured of proper functining. <br>
+                    The global stylesheet had to be imported to each additional stylesheet that are responsible of layouts of the other pages. I had to make sure that the stylings of the global stylesheet are not overtaken by other stylesheets, making sure the stylings are consistant throughout the whole web site.
+                </p> 
+        </section>
+
+        <section>
+            <h2 id="compliance"> Compliance</h2>
+                <p>I made sure the Volunteer page follows Janet rules by avoiding copyright infringement and avoiding the collection of personal data. I have maintained the accessibility by using proper tags and adding alternate text for images.
+                    The pages does not contain any offensive content. I admit it is not fully accessible yet but it will be resolved soon.
+                </p> 
+        </section>
+
+        <section>
+            <h2 id="ref">References</h2>
+            <h3>Images</h3>
+                <ul class="ref">
+                    <li>iStock (2025) <i>iStock.</i> Available at: <a href="https://www.istockphoto.com">https://www.istockphoto.com/</a> (Last accessed: 06 July 2025).</li>
+                    <li>Google Images (2025) <i>Google Images. </i>Available at: <a href="https://images.google.com">https://images.google.com</a> (Last accessed: 05 July 2025).</li>
+                </ul>
+
+            <h3>Content</h3>
+            <ul class="ref">
+                <li> <i>The ICUN Red List of Threatened Species.</i> Available at: <a href="https://www.iucnredlist.org/">https://www.iucnredlist.org/</a> (Last accessed: 02 July 2025).</li>
+                <li> <i>NOAA Ocean Explorer.</i> Available at: <a href="https://oceanexplorer.noaa.gov/explorations/deepeast01/background/dumping/dumping.html">https://oceanexplorer.noaa.gov</a> (Last accessed: 05 July 2025).</li>
+            </ul>
+        </section>
+
+        <!-- Back to the top button -->
+        <div id="totop" class="fa fa-circle-chevron-up fa-3x" onclick="window.scrollTo({top: 0});"></div>
+        <!-- End of back to the top button -->
+            
+    </main>
+
+    <!-- Sidebar area -->
+    <aside>
+        <h3>Core pages developed:</h3>
+
+    <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+        <ul class="top-level-ul">
+            <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+
+            <li>Student 2</li>
+                <ul>
+                    <li><a href="#global">Global CSS and Template</a></li>
+                    <li><a href="#home">Home page </a></li>
+                    <li><a href="#table">Table page</a></li>
+                    <li><a href="#content">Content page</a></li>
+                </ul>
+            <br>
+            <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#ref">References</a></li>
+        </ul>
+    </aside>
+</div>
+
+<!-- End of the Page editor. -->
+
+<!-- Footer section start -->
+<footer>
+    <div class="footercontent">
+        <div id="footerLogos">
+            <img src="../image/logo.png" alt="logo" class="siteLogo">
+            <img src="../image/sdgLogoTr.png" alt="SDGLogo" class="siteLogo">
+        </div>
+    <div>
+        <h3>Page Editors</h3>
+        <ul class="footerlinks">
+            <li><a href="./pageEditor_ST1.html">Student 1</a></li>
+            <li><a href="./pageEditor_ST2.html">Student 2</a></li>
+            <li><a href="./pageEditor_ST3.html">Student 3</a></li>
+            <li><a href="./pageEditor_ST4.html">Student 4</a></li>
+        </ul>
+    </div></div>
+    <hr style="width: 95%; height: 0; border-color: gray; margin: 0 auto; text-align: center;">
+    <p id="copyright">&copy; 2025 WebDev Group 4</p>
+</footer>
+<!-- Footer section end -->
+
+</body>
+</html>
